@@ -8,4 +8,6 @@ class LoginTest(unittest.TestCase):
 	def setUpClass(cls):
 		cls.driver = webdriver.Firefox()
 
-	
+	@classmethods
+	def teardownClass(cls):
+		cls.driver.quit()
