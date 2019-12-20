@@ -1,0 +1,19 @@
+Scenario: A error message appear when the user launch the application via Power Shell
+
+Description: When the user launch the application with the
+command "curl -d http://dxcespai684529:8080/#/login" a error message appear.
+This webpage contains errors that might prevent it from displaying or working correctly.
+
+
+User storie: As a user, I'm able to launch the application without that a error message apper.
+
+title: Webpage Error - ebookingConfig is underfined.
+
+Basic Flow
+        1. On your computer, open the Power Shell.
+        2. Type the command "curl -d http://dxcespai684529:8080/#/login" and press enter.
+
+        Expected result: The application open with all element and any kind of error appear.
+
+        Actual result: After the user open the application via Power Shell the application open
+        and show a error message that say that 'ebookingconfig' is undefined.
